@@ -1,0 +1,277 @@
+/* ### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+color: hsl(0, 0%, 59%);
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS RESET START (meyerweb.com)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET END (meyerweb.com */
+
+@font-face {
+    font-family: kumbh-r;
+    src: url(KumbhSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: kumbh-b;
+    src: url(KumbhSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: kumbh-l;
+    src: url(KumbhSans-Light.ttf);
+}
+
+/* body {
+    font-family: "kumbh-r";
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-position: -300px -489px, 600px 400px ;
+    background-repeat: no-repeat;
+} */
+
+body {
+    font-family: "kumbh-r";
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 40vh;
+    flex-direction: column;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-top img {
+    position: absolute;
+    right: 50%;
+    bottom: 40%;
+}
+
+.bg-bot img {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    overflow: visible;
+}
+
+.container {
+    width: 325px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.header {
+    order: 1;
+    flex: 3;
+    background-image: url(bg-pattern-card.svg);
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.header img {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 111.5px;
+    top: 72.27px;
+    cursor: pointer;
+    
+}
+
+.biodata {
+    order: 2;
+    flex: 3.5;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    border-bottom: solid;
+    border-color: hsl(0, 2%, 84%);
+    border-width: 0.5px;
+}  
+
+.text {
+    background-color: white;
+    width: 150px;
+    height: 70px;
+    line-height: 25px;
+}
+
+.text .name {
+    font-family: "kumbh-b";
+}
+
+.text .age {
+    color: hsl(0, 0%, 59%);
+}
+
+.text .loc {
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+}
+
+.amount {
+    order: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    font-family: "kumbh-b";
+    margin: 0px 30px;
+}
+
+.amount .followers {
+    order: 1;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.amount .likes {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.amount .photos {
+    order: 3;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.info {
+    order: 4;
+    flex: 1;
+    display: flex;
+    color: hsl(0, 0%, 59%);
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 0px 30px;
+}
+
+.info .followers {
+    order: 1;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.info .likes {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.info .photos {
+    order: 3;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+
+}
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width: 375px) {
+    body {
+        background-position: 10px -489px, 600px 400px ;
+        background-repeat: no-repeat;   
+    }
+    
+
+
+}
