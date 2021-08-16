@@ -1,3 +1,7 @@
+*CHECKOUT MY DESIGN RESULT (LIVESITE) FROM THIS CHALLENGE:*
+
+https://profilecard-flex-azmi.netlify.app/
+
 # Frontend Mentor - Profile card component
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
